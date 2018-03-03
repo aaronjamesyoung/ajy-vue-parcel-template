@@ -6,7 +6,8 @@
     "predev": "rm -rf .cache/* && rm -rf dist/*",
     "dev": "cpx static/**/* dist/static -w & parcel index.html",
     "prebuild": "rm -rf .cache/* && rm -rf dist/*",
-    "build": "cp -r static dist/static && parcel build index.html",
+    "build":
+      "cp -r static dist/static && parcel build index.html --public-url '.'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "husky": {
