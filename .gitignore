@@ -1,6 +1,5 @@
 .cache
-dist/*
-!dist/.gitkeep
+dist
 node_modules
 package-lock.json
 *.log
